@@ -6,8 +6,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
         System.out.println("Hello World!");
-        var input = Paths.get(Main.class.getClassLoader()
+        var day1 = Paths.get(Main.class.getClassLoader()
                 .getResource("resources/day1.txt").toURI());
-        var output = new Day1(input);
+        //new Day1(input);
+
+        var day2 = Paths.get(Main.class.getClassLoader()
+            .getResource("resources/day2.txt").toURI());
+        new Day2(day2);
     }
 }
