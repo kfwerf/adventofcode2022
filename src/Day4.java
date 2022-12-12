@@ -29,7 +29,8 @@ public class Day4 {
             ranges.add(currentCursor);
           }
         }
-        return ranges.size() == totalB ? ranges : new ArrayList<>();
+//        return ranges.size() == totalB ? ranges : new ArrayList<>();
+        return ranges;
       }
 
       for (int i = 0; i < totalA; i++) {
@@ -38,7 +39,8 @@ public class Day4 {
           ranges.add(currentCursor);
         }
       }
-      return ranges.size() == totalA ? ranges : new ArrayList<>();
+      return ranges;
+//      return ranges.size() == totalA ? ranges : new ArrayList<>();
     });
 
    System.out.println(lol.filter(arr -> arr.size() > 0).count());
