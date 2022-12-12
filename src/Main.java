@@ -16,6 +16,10 @@ public class Main {
 
         var day3 = Paths.get(Main.class.getClassLoader()
             .getResource("resources/day3.txt").toURI());
-        new Day3(day3);
+        //new Day3(day3);
+
+        var day4 = Paths.get(Main.class.getClassLoader()
+            .getResource("resources/day4.txt").toURI());
+        new Day4(day4);
     }
 }
